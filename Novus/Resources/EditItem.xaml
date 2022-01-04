@@ -1,0 +1,41 @@
+﻿<Page x:Class="Novus.Resources.EditItem"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Novus.Resources"
+      xmlns:root="clr-namespace:Novus"
+      mc:Ignorable="d" 
+      d:DesignHeight="560" d:DesignWidth="660"
+      Title="EditItem" Loaded="Page_Loaded">
+
+
+    <Grid Margin="0, 30, 0, 0">
+        <Label x:Name="lblDisplayName" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,113,0,0" Content="Display Name" Padding="0" Style="{DynamicResource labelPoppinsSemi}" FontSize="15"/>
+        <Label Content="*" Style="{DynamicResource labelPoppinsSemi}" Margin="215,108,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="DarkRed" FontSize="15"/>
+        <Label x:Name="lblPath" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,197,0,0" Content="Location / Path " Padding="0" Style="{DynamicResource labelPoppinsSemi}" FontSize="15"/>
+        <Label Content="*" Style="{DynamicResource labelPoppinsSemi}" Margin="222,190,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="DarkRed" FontSize="15"/>
+        <Label x:Name="lblLaunchParameters" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,281,0,0" Content="Launch Parameters" Padding="0" Style="{DynamicResource labelPoppinsSemi}" FontSize="12"/>
+
+        <Label x:Name="lblEditing" Style="{DynamicResource labelPoppinsSemi}" Content="Editing : " Foreground="#defffb" FontSize="20" Margin="90, 45" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblEName" Style="{DynamicResource labelPoppinsRegular}" Content="misingno" Foreground="White" FontSize="18" Margin="190, 46" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="textAddName" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF303030" Width="230" Height="30" Margin="110, 141,0,0" BorderThickness="0" Text="" VerticalContentAlignment="Center" FontFamily="/Novus;component/Resources/Fonts/#Poppins" Padding="5, 0, 0, -2" FontSize="12" Foreground="#FF696969" MaxLength="30"/>
+        <TextBox x:Name="textPath" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110, 225,0,0" Width="300" Height="30" Background="#FF303030" Text="" FontFamily="/Novus;component/Resources/Fonts/#Poppins" FontSize="12" Padding="5, 0, 0, -2" VerticalContentAlignment="Center" Foreground="#FF696969" BorderThickness="0"/>
+        <TextBox x:Name="textLaunchPara" HorizontalAlignment="Left" Text="{x:Null}" VerticalAlignment="Top" Margin="110, 309,0,0" Width="260" Height="30" Background="#FF303030" FontFamily="/Novus;component/Resources/Fonts/#Poppins" FontSize="12" Padding="5, 0, 0, -2" VerticalContentAlignment="Center" Foreground="#FF696969" BorderThickness="0"/>
+
+        <Button x:Name="btnBrowsePath" Margin="410, 225,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="30" Background="Black" Cursor="Hand" BorderThickness="0" Content="Browse" Foreground="White" FontSize="10" FontFamily="/Novus;component/Resources/Fonts/#Poppins" Click="btnBrowsePath_Click" ClickMode="Release"/>
+
+        <Image x:Name="imgIconPreview" Margin="110, 45" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="110" Stretch="UniformToFill" />
+        <Button x:Name="btnChangeImg" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="125, 160" Width="70" Height="25" Content="Change" Cursor="Hand" FontFamily="/Novus;component/Resources/Fonts/#Poppins SemiBold" FontSize="12" BorderThickness="0" Background="#FF19BA6D" Foreground="White" Click="btnChangeImg_Click" ClickMode="Release"/>
+        
+        <!-- Radio buttons for Stretch thingy
+        <RadioButton BorderThickness=".6" x:Name="btnRadio_Stretch" GroupName="Stretch" Margin="0,85,33,0" VerticalAlignment="Top"  HorizontalAlignment="Right" Background="Black" Foreground="White" Content="{DynamicResource iconExpandHorizontal}" IsChecked="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Template="{DynamicResource RadioButtonTemplate}"  Height="20" Width="20"/>
+        <RadioButton x:Name="btnRadio_NoStretch" GroupName="Stretch" Margin="0,149,30,0" VerticalAlignment="Top" HorizontalAlignment="Right" Background="#FF1A1A1A" Foreground="White" Content="No Stretch" FontFamily="/Novus;component/Resources/Fonts/#Poppins" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+-->
+        
+        <Button x:Name="btnSave" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110, 376,0,0" Width="100" Height="30" Content="Save" Cursor="Hand" FontFamily="/Novus;component/Resources/Fonts/#Poppins" FontSize="12" BorderThickness="0" Background="#FF19BA6D" Foreground="White" Click="btnSave_Click" ClickMode="Release"/>
+        <Button x:Name="btnCancel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,376,0,0" Width="100" Height="30" Content="Cancel" Cursor="Hand" FontFamily="/Novus;component/Resources/Fonts/#Poppins" FontSize="12" BorderThickness="0" Background="Black" Foreground="White" Click="btnCancel_Click" ClickMode="Release"/>
+        <Button x:Name="btnDelete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="340, 375, 0, 0" Width="32" Height="32" Background="Red" Foreground="White" Content="{StaticResource icnTrash}" Padding="0,0,5,4" BorderThickness="0" Cursor="Hand" Click="btnDelete_Click"/>
+    </Grid>
+</Page>

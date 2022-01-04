@@ -1,0 +1,86 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Novus.Resources">
+    
+    <!-- Icons -->
+    <Path x:Key="TrashIcon" Data="M2.833,4.491c0,0,0.513,0.491,0.513,0.776v12.568c0,0.832,0.736,1.507,1.645,1.507h9.362
+			c0.908,0,1.644-0.675,1.644-1.507V5.268c0-0.286,0.515-0.776,0.515-0.776V2.969H2.833V4.491z M12.36,6.23h1.223v9.705H12.36V6.23z
+			 M9.086,6.23h1.22v9.705h-1.22V6.23z M6.137,6.23h1.221v9.705H6.137V6.23z" Fill="White"/>
+
+    <Path x:Key="icnTrash" Data="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" Fill="White"/>
+    <Path x:Key="iconExpandHorizontal" Data="M9,11H15V8L19,12L15,16V13H9V16L5,12L9,8V11M2,20V4H4V20H2M20,20V4H22V20H20Z" Fill="White"/>
+    <Path x:Key="iconPlay" Data="M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M10,17L15,12L10,7V17Z" Fill="Black"/>
+    <Path x:Key="iconPlay_Solid" Data="M8,5.14V19.14L19,12.14L8,5.14Z" Fill="Black"/>
+
+    <Path x:Key="logoNovus" Fill="Wheat" Data="M117.3,20.3c-1.6-0.5-2.8-0.5-3.7,0L36.1,68.7c-1,0.7-1.4,1.7-1.4,2.7v89.4h73.7c0.7,0,1.3-0.2,1.8-0.8
+				c0.5-0.5,0.7-1.1,0.7-1.8s-0.2-1.2-0.7-1.7c-0.5-0.5-1.1-0.7-1.8-0.7h-9v-3.9h9c0.7,0,1.3-0.2,1.8-0.8c0.5-0.5,0.7-1.1,0.7-1.8
+				s-0.2-1.2-0.7-1.7c-0.5-0.5-1.1-0.7-1.8-0.7h-9v-4h9c0.7,0,1.3-0.2,1.8-0.8c0.5-0.5,0.7-1.1,0.7-1.8s-0.2-1.2-0.7-1.7
+				c-0.5-0.5-1.1-0.7-1.8-0.7h-9v-4h9c0.7,0,1.3-0.2,1.8-0.8c0.5-0.5,0.7-1.1,0.7-1.8s-0.2-1.2-0.7-1.7c-0.5-0.5-1.1-0.7-1.8-0.7
+				H66.7V90.4c0-1.2,0.6-2,1.7-2.7l45.4-28.2c1.2-0.7,2.3-0.7,3.5,0l45.3,28.2c1,0.7,1.3,1.7,1.3,2.7v82.9H37.1
+				c-0.7,0-1.3,0.2-1.8,0.7c-0.4,0.5-0.6,1.1-0.6,1.8c0,0.7,0.2,1.2,0.6,1.8c0.5,0.5,1.1,0.7,1.8,0.7h9v3.9h-9
+				c-0.7,0-1.3,0.2-1.8,0.7c-0.4,0.5-0.6,1.1-0.6,1.8s0.2,1.2,0.6,1.8c0.5,0.5,1.1,0.7,1.8,0.7h9v3.9h-9c-0.7,0-1.3,0.2-1.8,0.7
+				c-0.4,0.5-0.6,1.1-0.6,1.8s0.2,1.2,0.6,1.8c0.5,0.5,1.1,0.7,1.8,0.7h9v3.9h-9c-0.7,0-1.3,0.2-1.8,0.7c-0.4,0.5-0.6,1.1-0.6,1.8
+				s0.2,1.2,0.6,1.8c0.5,0.5,1.1,0.7,1.8,0.7h159.3V71.5c0-1.3-0.5-2.2-1.6-2.7L117.3,20.3z">
+        <Path.LayoutTransform>
+            <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+        </Path.LayoutTransform>
+    </Path>
+
+
+    <!--- Template for the Stretch thingy
+    <ControlTemplate x:Key="RadioButtonTemplate" TargetType="{x:Type RadioButton}">
+        <Grid x:Name="templateRoot" Background="Transparent" SnapsToDevicePixels="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border x:Name="radioButtonBorder" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="0" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="0" Height="20" Width="20" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                <Grid x:Name="markGrid" Margin="2">
+                    <Rectangle x:Name="optionMark" Fill="#49B47C" MinWidth="6" MinHeight="6" Opacity="0"/>
+                </Grid>
+            </Border>
+            <ContentPresenter x:Name="contentPresenter" Height="15" Width="15" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Grid.Column="0" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="HasContent" Value="True">
+                <Setter Property="FocusVisualStyle">
+                    <Setter.Value>
+                        <Style>
+                            <Setter Property="Control.Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <Rectangle Margin="0,0,0,0" SnapsToDevicePixels="True" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Padding" Value="0"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" TargetName="radioButtonBorder" Value="#FFF3F9FF"/>
+                <Setter Property="BorderBrush" TargetName="radioButtonBorder" Value="#FF5593FF"/>
+                <Setter Property="Fill" TargetName="optionMark" Value="#49B4C8"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" TargetName="radioButtonBorder" Value="#FFE6E6E6"/>
+                <Setter Property="BorderBrush" TargetName="radioButtonBorder" Value="#FFBCBCBC"/>
+                <Setter Property="Fill" TargetName="optionMark" Value="#FF707070"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" TargetName="radioButtonBorder" Value="#FFD9ECFF"/>
+                <Setter Property="BorderBrush" TargetName="radioButtonBorder" Value="#FF3C77DD"/>
+                <Setter Property="Fill" TargetName="optionMark" Value="#49B4C8"/>
+            </Trigger>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Opacity" TargetName="optionMark" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsChecked" Value="{x:Null}">
+                <Setter Property="Opacity" TargetName="optionMark" Value="0.56"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    -->
+
+</ResourceDictionary>
