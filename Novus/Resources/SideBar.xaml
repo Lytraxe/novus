@@ -50,8 +50,8 @@
 
     <Grid>
         <ListBox x:Name="listBox" FontFamily="/Novus;component/Resources/Fonts/#Poppins" Foreground="White" FontSize="15" Background="{x:Null}" BorderThickness="0" Height="100">
-            <ListBoxItem Content="All Apes"  Margin="20,0,0,0" Template="{DynamicResource ListViewItemControlTemplate1}"  x:Name="itemAdd"/>
-            <ListBoxItem Content="Add Ape" Margin="20,0,0,0" Template="{DynamicResource ListViewItemControlTemplate1}"  x:Name="itemDummy"/>
+            <ListBoxItem Content="All Items"  Margin="20,0,0,0" Template="{DynamicResource ListViewItemControlTemplate1}"  x:Name="itemAdd"/>
+            <ListBoxItem Content="Add Item" Margin="20,0,0,0" Template="{DynamicResource ListViewItemControlTemplate1}"  x:Name="itemDummy"/>
             <ListBoxItem Content="..." Margin="20,0,0,0" Template="{DynamicResource ListViewItemControlTemplate1}"  x:Name="itemAll"/>
         </ListBox>
     </Grid>

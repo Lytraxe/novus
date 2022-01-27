@@ -49,11 +49,8 @@ namespace Novus
                     XmlParser.Serialize(pref);
                     pref = XmlParser.Deserialize();
                 }
-
-                if (pref.EnableLog == "true")
-                    Classes.GlobalVariables.isLogging = true;
-                else
-                    Classes.GlobalVariables.isLogging = false;
+                
+                Classes.GlobalVariables.isLogging = (pref.EnableLog == "true") ? true : false;
             }
             logger = new Classes.Logger();
         }
